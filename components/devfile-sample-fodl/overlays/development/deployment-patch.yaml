@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-fodl
+  namespace: mreid-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/mreid-tenant/my-app/devfile-sample-fodl@sha256:fdf5a20180c81451696c97fb3327bd95178a698cf695a78c60b8e977da30cfaa
+        name: my-nodejs
+        resources: {}
+status: {}

@@ -26,7 +26,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-fodl
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/stonesoupuicluster/mreid-tenant/my-app/devfile-sample-fodl@sha256:fdf5a20180c81451696c97fb3327bd95178a698cf695a78c60b8e977da30cfaa
         name: my-nodejs
         ports:
         - containerPort: 3001
